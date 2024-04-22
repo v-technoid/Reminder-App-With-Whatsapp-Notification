@@ -10,7 +10,7 @@ app.use(express.urlencoded())
 app.use(cors())
 
 //DB config
-mongoose.connect('mongodb://localhost:27017/reminderAppDB', {
+mongoose.connect('mongodb://localhost:27017/Reminder', {
     useNewUrlParser: true, 
     useUnifiedTopology: true
 }, () => console.log("DB connected"))
@@ -45,7 +45,7 @@ setInterval(() => {
                                 .create({ 
                                     body: reminder.reminderMsg, 
                                     from: 'whatsapp:+14155238886',       
-                                    to: 'whatsapp:+918888888888' //YOUR PHONE NUMBER INSTEAD OF 8888888888
+                                    to: 'whatsapp:+919944033851' //YOUR PHONE NUMBER INSTEAD OF 8888888888
                                 }) 
                                 .then(message => console.log(message.sid)) 
                                 .done()
